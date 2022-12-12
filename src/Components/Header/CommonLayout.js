@@ -10,7 +10,9 @@ function CommonLayout() {
       <Header />
       <Box sx={{ display: "flex" }}>
         <Sidebar />
-        <Outlet />
+        <div className="outlet">
+          <Outlet />
+        </div>
       </Box>
     </Fragment>
   );
