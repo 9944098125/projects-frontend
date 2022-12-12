@@ -4,6 +4,7 @@ import auth from "./signInReducer";
 import signup from "./signupReducer";
 import createReducer from "./createProject";
 import getReducer from "./getProjects";
+import updateReducer from "./updateReducer";
 
 export default combineReducers({
   alert,
@@ -11,4 +12,5 @@ export default combineReducers({
   signup,
   createReducer,
   getReducer,
+  updateReducer,
 });

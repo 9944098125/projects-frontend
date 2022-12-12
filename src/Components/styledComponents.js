@@ -198,7 +198,7 @@ export const EachItem = styled.div`
   width: 100%;
   background-color: pink;
   border-radius: 12px;
-  height: 220px;
+  height: 100%;
   padding: 15px;
   margin: 5px;
 `;
@@ -215,7 +215,63 @@ export const EachItemText = styled.p`
   font-size: ${(props) => props.fs};
   font-weight: ${(props) => props.fw};
   font-style: ${(props) => props.it && "italic"};
-  color: ${(props) => (props.links ? "#1C86EE" : "white")};
+  color: white;
   font-family: ${(props) => props.ff && "cursive"};
   text-decoration: ${(props) => props.links && "underline"};
+`;
+
+export const UpdateButton = styled.button`
+  width: 25%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #008b8b;
+  border: none;
+  color: white;
+  border-radius: 8px;
+`;
+
+export const TextField = styled.input`
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 45px;
+  border: none;
+  border-bottom: 2px solid green;
+  &:focus {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid green;
+  }
+`;
+
+export const TextArea = styled.textarea`
+  border-radius: 8px;
+`;
+
+export const MyAccountContainer = styled.div`
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+`;
+
+export const EachRowInAccount = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 50%;
+  background-color: #bced91;
+  padding: 20px;
+`;
+
+export const TextInRow = styled.p`
+  font-size: ${(props) => props.fs};
+  font-weight: ${(props) => props.fw};
+  color: ${(props) => props.color};
+  font-style: ${(props) => props.it && "italic"};
+  transform: ${(props) => props.sc && "scale(1.2,1.3)"};
+  font-family: ${(props) => props.ff && "cursive"};
 `;
