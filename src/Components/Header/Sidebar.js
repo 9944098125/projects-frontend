@@ -46,14 +46,6 @@ function Sidebar() {
             <KeyIcon sx={{ mr: 2 }} /> Change Password
           </Link>
         </SidebarItems>
-        <SidebarItems>
-          <Link
-            to="/deleted"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <AutoDeleteIcon sx={{ mr: 2 }} /> Deleted Projects
-          </Link>
-        </SidebarItems>
       </SidebarContainer>
     </Fragment>
   );

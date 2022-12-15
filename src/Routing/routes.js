@@ -7,7 +7,6 @@ import ProjectsDisplay from "../Components/ProjectsDisplay";
 import MyAccountRoute from "../Components/MyAccountRoute/MyAccountRoute";
 import ChangePassword from "../Components/ChangePassword";
 import ProjectsCreation from "../Components/ProjectsCreation";
-import DeletedProjects from "../Components/DeletedProjects";
 
 export default function BaseRoutes() {
   return (
@@ -20,7 +19,6 @@ export default function BaseRoutes() {
           <Route path="/my-account" element={<MyAccountRoute />} />
           <Route path="/change-password" element={<ChangePassword />} />
           <Route path="/create" element={<ProjectsCreation />} />
-          <Route path="/deleted" element={<DeletedProjects />} />
         </Route>
       </Routes>
     </Fragment>

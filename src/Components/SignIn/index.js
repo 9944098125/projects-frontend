@@ -58,7 +58,7 @@ function SignIn() {
       )
     ) {
       errors.password =
-        "Password must 8 characters long with at least one Capital letter, one number and one special character";
+        "Password must contain 8 characters with atleast one number, one capital letter and one special character";
     }
     return errors;
   };

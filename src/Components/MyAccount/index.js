@@ -48,15 +48,21 @@ const MyAccount = () => {
           <img
             src={user.image}
             alt="user"
-            height="45px"
+            height="65px"
+            width="60px"
             style={{ marginRight: "15px", borderRadius: "50%" }}
           />
           {user.firstName + " " + user.lastName}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            An Aspiring Full Stack web developer working as an Associate
-            software engineer in Teknotrait solutions PVT LTD.
+          <DialogContentText style={{ fontWeight: "700", color: "blue" }}>
+            Email: {user.email}
+          </DialogContentText>
+          <DialogContentText style={{ fontWeight: "700", color: "green" }}>
+            Phone Number: {user.phone}
+          </DialogContentText>
+          <DialogContentText style={{ fontWeight: "700", color: "red" }}>
+            Country: {user.country}
           </DialogContentText>
         </DialogContent>
         <DialogActions>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Field } from "formik";
 
 export const LoginContainer = styled.div`
   display: flex;
@@ -259,12 +260,15 @@ export const MyAccountContainer = styled.div`
 
 export const EachRowInAccount = styled.div`
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 20px;
-  width: 50%;
-  background-color: #bced91;
-  padding: 20px;
+  width: 45%;
+  margin-right: 5%;
+  background-color: #00688b;
+  height: 35%;
+  padding-left: 40px;
+  padding: 2%;
+  border-radius: 12px;
 `;
 
 export const TextInRow = styled.p`
@@ -274,4 +278,28 @@ export const TextInRow = styled.p`
   font-style: ${(props) => props.it && "italic"};
   transform: ${(props) => props.sc && "scale(1.2,1.3)"};
   font-family: ${(props) => props.ff && "cursive"};
+  margin-right: ${(props) => props.mr};
+`;
+
+export const PasswordFieldContainer = styled.div`
+  width: 100%;
+  padding: 25px;
+`;
+
+export const PasswordFields = styled(Field)`
+  width: 80%;
+  height: 45px;
+  border: 1px solid #00688b;
+  border-radius: 8px;
+  margin-right: -30px;
+  &:focus {
+    outline: none;
+    border: 1px solid #00688b;
+  }
+`;
+
+export const Labels = styled.label`
+  font-size: 18px;
+  font-weight: 700;
+  color: #00688b;
 `;

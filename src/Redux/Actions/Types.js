@@ -25,3 +25,19 @@ export const GET_PROJECTS_FAIL = "GET_PROJECTS_FAIL";
 export const UPDATE_START = "UPDATE_START";
 export const UPDATE_SUCCESS = "UPDATE_SUCCESS";
 export const UPDATE_FAIL = "UPDATE_FAIL";
+// reset password
+export const RESET_PASSWORD_START = "RESET_PASSWORD_START";
+export const RESET_PASSWORD_SUCCESS = "RESET_PASSWORD_SUCCESS";
+export const RESET_PASSWORD_FAIL = "RESET_PASSWORD_FAIL";
+// get a user
+export const GET_USER_START = "GET_USER_START";
+export const GET_USER_SUCCESS = "GET_USER_SUCCESS";
+export const GET_USER_FAIL = "GET_USER_FAIL";
+// update user
+export const UPDATE_USER_START = "UPDATE_USER_START";
+export const UPDATE_USER_SUCCESS = "UPDATE_USER_SUCCESS";
+export const UPDATE_USER_FAIL = "UPDATE_USER_FAIL";
+// delete projects
+export const DELETE_START = "DELETE_START";
+export const DELETE_SUCCESS = "DELETE_SUCCESS";
+export const DELETE_FAIL = "DELETE_FAIL";
